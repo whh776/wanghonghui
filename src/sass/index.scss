@@ -1,5 +1,11 @@
 $page_width:1200px;
 $fontsize:12px;
+$page_color:#f9f9f9;
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
 @import "compass/reset";
 // 头部
 @import "header";

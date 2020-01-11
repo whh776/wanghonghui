@@ -3,5 +3,99 @@ $bpc_height:550px;
 #bpc {
     width: 100%;
     height: $bpc_height;
-    background-color: yellow;
+    position: relative;
+    cursor: pointer;
+    // background-color: red;
+}
+
+#bpc {
+    .bpc_ul {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        // li {
+        // position: absolute;
+        // left: 0;
+        // top: 0px;
+        // opacity: 0;
+        .li1 {
+            background: url("https://res.vmallres.com/pimages//pages/picImages/megBedAIUEvTXt6mPzUw.jpg") 50% 0px no-repeat;
+            width: 100%;
+            height: 550px;
+            position: absolute;
+            opacity: 1;
+        }
+        .li2 {
+            background: url("https://res.vmallres.com/pimages//pages/picImages/0cKi4yefIQQqBcHBZDU2.jpg") 50% 0px no-repeat;
+            width: 100%;
+            height: 550px;
+            position: absolute;
+            opacity: 1;
+        }
+        .li3 {
+            background: url("https://res.vmallres.com/pimages//pages/picImages/0cKi4yefIQQqBcHBZDU2.jpg") 50% 0px no-repeat;
+            width: 100%;
+            height: 550px;
+            position: absolute;
+            opacity: 1;
+        }
+        .li4 {
+            background: url("https://res.vmallres.com/pimages//pages/picImages/0cKi4yefIQQqBcHBZDU2.jpg") 50% 0px no-repeat;
+            width: 100%;
+            height: 550px;
+            position: absolute;
+            opacity: 1;
+        }
+        .li5 {
+            background: url("https://res.vmallres.com/pimages//pages/picImages/megBedAIUEvTXt6mPzUw.jpg") 50% 0px no-repeat;
+            width: 100%;
+            height: 550px;
+            position: absolute;
+            opacity: 1;
+        }
+        .li6 {
+            background: url("https://res.vmallres.com/pimages//pages/picImages/0cKi4yefIQQqBcHBZDU2.jpg") 50% 0px no-repeat;
+            width: 100%;
+            height: 550px;
+            position: absolute;
+            opacity: 1;
+        }
+    }
+}
+
+#bpc .bpc_nav {
+    width: 200px;
+    height: 400px;
+    background-color: gray;
+    position: absolute;
+    left: 160px;
+    top: 10px;
+    box-shadow: 0 0 46px rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+}
+
+#bpc .bpc_button {
+    .button_left {
+        left: 204px;
+        top: 199px;
+        background-position: 0 -72px;
+        margin-top: 0;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        display: block!important;
+        // background: url(https://res8.vmallres.com/20191126/css/../images/echannel/icon/icon01.svg) no-repeat;
+    }
+    .button_right {
+        left: 1132px;
+        top: 119px;
+        background-position: -80px -72px;
+        margin-top: 0;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        display: block!important;
+        // background: url(https://res8.vmallres.com/20191126/css/../images/echannel/icon/icon01.svg) no-repeat;
+    }
 }

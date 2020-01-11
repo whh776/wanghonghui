@@ -1,10 +1,23 @@
 $header_width:1200px;
 $header_height:36px;
+.kgt {
+    width: 100%;
+    // margin: 0 auto;
+    // top: 0;
+    // left: 0;
+    // position: relative;
+    img {
+        width: 1200px;
+        // margin-left: 200px;
+        margin: 0 auto;
+    }
+}
+
 #header {
     width: 100%;
     height: $header_height;
     line-height: 36px;
-    background-color: #fff;
+    background-color: $page_color;
 }
 
 #header .header_content {
@@ -25,6 +38,7 @@ $header_height:36px;
     float: left;
     padding: 0 8px;
     position: relative;
+    margin-left: 6px;
 }
 
 #header .header_content .content_left .content_left_ul li:first-child {
@@ -73,6 +87,7 @@ $header_height:36px;
     float: left;
     padding: 0 8px;
     position: relative;
+    margin-left: 7px;
 }
 
 #header .header_content .content_right .content_right_ul li a {

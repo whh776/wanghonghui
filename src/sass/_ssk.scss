@@ -1,7 +1,76 @@
-// $ssk_width:1200px;
-$ssk_height:41px;
 #ssk {
     width: 100%;
-    height: $ssk_height;
-    background-color: orange;
+    height: 41px;
+    // background-color: orange;
+    padding: 18px 0 15px 0;
+    // background: #fff;
+    position: relative;
+    overflow: hidden;
+    .ssk_content {
+        width: $page_width;
+        height: 100%;
+        // background-color: gray;
+        margin: 0 auto;
+        .content_left {
+            width: 654.56px;
+            height: 42px;
+            // background-color: red;
+            float: left;
+            a {
+                text-decoration: none;
+                float: left;
+                img {
+                    height: 36px;
+                }
+            }
+        }
+        .content_right {
+            line-height: 1;
+            width: 318px;
+            height: 28px;
+            background: #f0f0f0;
+            border: 1px solid #f0f0f0;
+            border-radius: 15px;
+            position: relative;
+            float: right;
+            // z-index: 310;
+        }
+    }
+}
+
+#ssk .ssk_content .content_left .left_ul {
+    margin-left: 10px;
+    li {
+        margin-top: 7px;
+        float: left;
+        margin-right: 24px;
+        a {
+            font-size: 16px;
+            color: #333;
+            position: relative;
+            line-height: 40px;
+            display: block;
+            img {
+                display: block;
+                height: 24px;
+            }
+        }
+    }
+    .img {
+        margin-top: 7px;
+    }
+    .li_size a {
+        font-size: 16px;
+        color: #333;
+        line-height: 25px;
+    }
+}
+
+#ssk .ssk_content .content_right {
+    .right_input {
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+        background: #f0f0f0;
+    }
 }
