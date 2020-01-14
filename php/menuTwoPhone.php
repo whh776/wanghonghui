@@ -19,8 +19,8 @@ if($conn->connect_error){//如果存在错误，输出错误。
 $conn->query('SET NAMES UTF8');
 
 // 增加
-$sql="INSERT phone VALUES(null,'https://res0.vmallres.com/pimages//product/6901443320394/428_428_1563504284133mp.png','荣耀9X PRO','优惠200 128GB版送配件','1999'";
-$conn->query($sql);
+// $sql="INSERT phone VALUES(null,'https://res0.vmallres.com/pimages//product/6901443320394/428_428_1563504284133mp.png','荣耀9X PRO','优惠200 128GB版送配件','1998')";
+// $conn->query($sql);
 // 
 $result=$conn->query("SELECT * FROM phone");
 $array=array();

@@ -25,15 +25,13 @@
             }
         }
         .content_right {
-            line-height: 1;
             width: 318px;
             height: 28px;
             background: #f0f0f0;
-            border: 1px solid #f0f0f0;
             border-radius: 15px;
             position: relative;
             float: right;
-            // z-index: 310;
+            margin-right: 35px;
         }
     }
 }
@@ -70,7 +68,29 @@
     .right_input {
         width: 100%;
         height: 100%;
-        border-radius: 18px;
+        border-radius: 15px;
         background: #f0f0f0;
+        border: 1px solid #f0f0f0;
+        outline: none;
+        padding-left: 15px
+    }
+    .right_content {
+        position: absolute;
+        max-width: 260px;
+        right: 31px;
+        bottom: 6px;
+        z-index: 311;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 12px;
+        a:first-child {
+            color: #CF0A2C;
+            margin-right: 14px;
+        }
+        a:last-child {
+            color: #999;
+            margin-right: 14px;
+            ;
+        }
     }
 }

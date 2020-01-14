@@ -2,5 +2,15 @@ $spic_height:260px;
 #spic {
     width: 100%;
     height: $spic_height;
-    background-color: purple;
+    // background-color: purple;/
+    a {
+        width: 1200px;
+        margin: 0 auto;
+        display: block;
+        img {
+            border-radius: 10px;
+            vertical-align: top;
+            width: 100%;
+        }
+    }
 }

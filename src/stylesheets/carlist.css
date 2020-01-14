@@ -1,0 +1,381 @@
+/* line 4, ../sass/carlist.scss */
+* {
+  list-style: none;
+  text-decoration: none;
+}
+
+/* line 9, ../sass/carlist.scss */
+a {
+  cursor: pointer;
+}
+
+/* line 5, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 3, ../sass/_header.scss */
+#kgt {
+  width: 100%;
+}
+/* line 9, ../sass/_header.scss */
+#kgt .kgt_content {
+  width: 1200px;
+  height: 90px;
+  background-color: red;
+  margin: 0 auto;
+  background: url(https://res.vmallres.com/pimages//pages/picImages/xdZ2PfI5qSJeYX3kYlvo.jpg) 50% 100% no-repeat;
+}
+/* line 15, ../sass/_header.scss */
+#kgt .kgt_content span {
+  font-size: 20px;
+  display: block;
+  float: right;
+  margin: 15px 30px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: white;
+  background-color: gray;
+  line-height: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* line 32, ../sass/_header.scss */
+#header {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  background-color: #f9f9f9;
+}
+
+/* line 39, ../sass/_header.scss */
+#header .header_content {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* line 46, ../sass/_header.scss */
+#header .header_content .content_left {
+  width: 617px;
+  height: 100%;
+  float: left;
+}
+
+/* line 53, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul li {
+  float: left;
+  padding: 0 8px;
+  position: relative;
+}
+
+/* line 60, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul li:first-child {
+  padding-left: 0;
+}
+
+/* line 64, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul li:last-child {
+  position: relative;
+}
+
+/* line 68, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul .left_ul_shu::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background: #d3d3d3;
+}
+
+/* line 79, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul .xiala::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-position: -71px 0;
+  position: absolute;
+  top: 10px;
+  left: 55px;
+  background: url(https://res8.vmallres.com/20191126/css/../images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -68px 3px;
+}
+
+/* line 93, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul li .content_left_ul_ol {
+  width: 135px;
+  height: 150px;
+  padding: 6px 0 12px 0;
+  text-align: center;
+  line-height: 32px;
+  position: relative;
+  top: 0;
+  left: -55px;
+  background-color: white;
+  z-index: 2;
+  margin: 0 -9px;
+  box-shadow: 0 2px 36px 0 rgba(0, 0, 0, 0.07);
+  z-index: 311;
+}
+/* line 107, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul li .content_left_ul_ol li {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+  color: #777;
+  font-size: 12px;
+}
+
+/* line 116, ../sass/_header.scss */
+#header .header_content .content_left .content_left_ul li a {
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  color: #a4a4a4;
+}
+
+/* line 124, ../sass/_header.scss */
+#header .header_content .content_right {
+  width: 512px;
+  height: 100%;
+  float: right;
+}
+
+/* line 131, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul li {
+  float: left;
+  padding: 0 8px;
+  position: relative;
+  margin-left: 7px;
+}
+
+/* line 138, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  padding-right: 10px;
+  color: #a4a4a4;
+  font-size: 12px;
+}
+
+/* line 147, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul .after::before {
+  content: "";
+  width: 1px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: -12px;
+  background: #d3d3d3;
+}
+
+/* line 158, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul .gang_xiala::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-position: -71px 0;
+  position: absolute;
+  top: 5px;
+  left: 50px;
+  background: url(https://res8.vmallres.com/20191126/css/../images/echannel/icon/icon-common.svg) no-repeat;
+  background-position: -70px -3px;
+}
+
+/* line 172, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul .xiala_hover_one {
+  position: relative;
+}
+/* line 174, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul .xiala_hover_one ol {
+  position: absolute;
+  background: white;
+  font-size: 12px;
+  width: 80px;
+  height: 50px;
+  z-index: 2;
+  line-height: 20px;
+  left: -2px;
+  top: 35px;
+  display: none;
+}
+/* line 185, ../sass/_header.scss */
+#header .header_content .content_right .content_right_ul .xiala_hover_one ol li {
+  width: "63px";
+  background: "white";
+}
+
+/* line 1, ../sass/_ssk.scss */
+#ssk {
+  width: 100%;
+  height: 41px;
+  padding: 18px 0 15px 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 9, ../sass/_ssk.scss */
+#ssk .ssk_content {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 14, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left {
+  width: 654.56px;
+  height: 42px;
+  float: left;
+}
+/* line 19, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left a {
+  text-decoration: none;
+  float: left;
+}
+/* line 22, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left a img {
+  height: 36px;
+}
+/* line 27, ../sass/_ssk.scss */
+#ssk .ssk_content .content_right {
+  width: 318px;
+  height: 28px;
+  background: #f0f0f0;
+  border-radius: 15px;
+  position: relative;
+  float: right;
+  margin-right: 35px;
+}
+
+/* line 39, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left .left_ul {
+  margin-left: 10px;
+}
+/* line 41, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left .left_ul li {
+  margin-top: 7px;
+  float: left;
+  margin-right: 24px;
+}
+/* line 45, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left .left_ul li a {
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  line-height: 40px;
+  display: block;
+}
+/* line 51, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left .left_ul li a img {
+  display: block;
+  height: 24px;
+}
+/* line 57, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left .left_ul .img {
+  margin-top: 7px;
+}
+/* line 60, ../sass/_ssk.scss */
+#ssk .ssk_content .content_left .left_ul .li_size a {
+  font-size: 16px;
+  color: #333;
+  line-height: 25px;
+}
+
+/* line 68, ../sass/_ssk.scss */
+#ssk .ssk_content .content_right .right_input {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  outline: none;
+  padding-left: 15px;
+}
+/* line 77, ../sass/_ssk.scss */
+#ssk .ssk_content .content_right .right_content {
+  position: absolute;
+  max-width: 260px;
+  right: 31px;
+  bottom: 6px;
+  z-index: 311;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 12px;
+}
+/* line 86, ../sass/_ssk.scss */
+#ssk .ssk_content .content_right .right_content a:first-child {
+  color: #CF0A2C;
+  margin-right: 14px;
+}
+/* line 90, ../sass/_ssk.scss */
+#ssk .ssk_content .content_right .right_content a:last-child {
+  color: #999;
+  margin-right: 14px;
+}

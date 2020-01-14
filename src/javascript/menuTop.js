@@ -1,31 +1,29 @@
-$(document).ready(function() {;
-    ! function($) {
-        class render {
-            constructor() {
-                this.menu_top = $('.menu_top');
-            }
-            init() {
-                $.ajax({
-                    url: "http://localhost/wanghonghui/php/menu.php",
-                    dataType: 'json'
-                }).done(date => {
-                    let $str = '<ul class="top_ul">'
-                    $.each(date, function(index, value) {
-                        if (value.sid >= 100) {
-                            $str += `
+! function($) {
+    class render {
+        constructor() {
+            this.menu_top = $('.menu_top');
+        }
+        init() {
+            $.ajax({
+                url: "http://localhost/wanghonghui/php/menu.php",
+                dataType: 'json'
+            }).done(date => {
+                let $str = '<ul class="top_ul">'
+                $.each(date, function(index, value) {
+                    if (value.sid >= 100) {
+                        $str += `
                             <li>
                                  <a href="details.html?sid=${value.sid}">
                                      <img src="${value.url}" alt="">  
                                  </a>
                             </li>
                                 `
-                        }
-                    })
-                    $str += '</ul>'
-                    this.menu_top.html($str)
+                    }
                 })
-            }
+                $str += '</ul>'
+                this.menu_top.html($str)
+            })
         }
-        new render().init();
-    }(jQuery);
-})
+    }
+    new render().init();
+}(jQuery);
