@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册页面</title>
+    <link rel="stylesheet" href="stylesheets/registry.css">
 </head>
 
 <body>
@@ -27,8 +28,53 @@
     </div>
     <!-- 表单 -->
     <div id="inp">
+        <div class="inp_tab">
+            <a href="">手机号</a>
+            <a href="">电子邮箱</a>
+            <span>已有华为账号</span>
+            <a href="">登入</a>
+        </div>
         <div class="inp_content">
-
+            <!-- 表单部分 -->
+            <div class="content_title">
+                <p>注册华为帐号</p>
+                <p>用于访问所有华为终端云服务</p>
+            </div>
+            <div class="content_password">
+                <div class="password_left">国家/地区</div>
+                <div class="password_right">
+                    <input type="text" placeholder="中国">
+                </div>
+            </div>
+            <div class="content_password">
+                <div class="password_left">+86(中国)</div>
+                <div class="password_right">
+                    <input type="text" placeholder="请输入手机号">
+                </div>
+            </div>
+            <div class="content_password">
+                <div class="password_left">密码</div>
+                <div class="password_right">
+                    <input type="text" placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="content_password">
+                <div class="password_left">确认密码</div>
+                <div class="password_right">
+                    <input type="text" placeholder="请再次输入密码">
+                </div>
+            </div>
+            <div class="content_password">
+                <div class="password_left">出生日期</div>
+                <div class="password_right">
+                    <input type="text" placeholder="请填入出生日期">
+                </div>
+            </div>
+            <!-- 注册部分 -->
+            <div class="registry">
+                <input type="button" class="btn id=" btnSubmit " value="注册 ">
+                <div id="register_msg " style="position: relative; left: 26%; "></div>
+            </div>
         </div>
     </div>
 

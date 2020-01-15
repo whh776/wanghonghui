@@ -1,19 +1,19 @@
 // 网址http://10.31.152.68/wanghonghui/php/menuTwoPhone.php
-! function($) {
-    class render {
-        constructor() {
-            this.menu_two_content = $('.menu_two_content');
-            // this.menu_two_phone = $('.menu_two_phone');
-        }
-        init() {
-            $.ajax({
-                url: "http://localhost/wanghonghui/php/menuTwoPhone.php",
-                dataType: 'json'
-            }).done(date => {
-                let $menuTwoContent = '<ul class= "menu_two_content_ul">'
-                $.each(date, function(index, value) {
-                        if (value.sid > 8) {
-                            $menuTwoContent += `
+// ! function($) {
+class menuTwoPhone {
+    constructor() {
+        this.menu_two_content = $('.menu_two_content');
+        // this.menu_two_phone = $('.menu_two_phone');
+    }
+    init() {
+        $.ajax({
+            url: "http://localhost/wanghonghui/php/menuTwoPhone.php",
+            dataType: 'json'
+        }).done(date => {
+            let $menuTwoContent = '<ul class= "menu_two_content_ul">'
+            $.each(date, function(index, value) {
+                    if (value.sid > 8) {
+                        $menuTwoContent += `
                         <li>
                             <a href="details.html?sid=${value.sid}">
                                 <p class="grid-img">
@@ -26,12 +26,14 @@
                             </a>
                         </li>
                         `
-                        }
-                    })
-                    // console.log($menuTwoContent)
-                this.menu_two_content.html($menuTwoContent)
-            })
-        }
+                    }
+                })
+                // console.log($menuTwoContent)
+            this.menu_two_content.html($menuTwoContent)
+        })
     }
-    new render().init();
-}(jQuery);
+}
+// }(jQuery);
+export {
+    menuTwoPhone
+}

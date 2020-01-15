@@ -43,8 +43,8 @@ class header {
             })
     }
 }
-new header().init();
+
 // }(jQuery);
-// export {
-//     header
-// }
+export {
+    header
+}

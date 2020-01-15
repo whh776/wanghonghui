@@ -15,7 +15,7 @@
         <div class="header_content">
             <div class="content_left">
                 <ul class="content_left_ul">
-                    <li><a href="">首页</a></li>
+                    <li><a href="index.html">首页</a></li>
                     <li class="left_ul_shu"><a href="">华为官网</a></li>
                     <li class="left_ul_shu"><a href="">荣耀官网</a></li>
                     <li class="left_ul_shu"><a href="">花粉俱乐部</a></li>
@@ -66,9 +66,58 @@
             </div>
         </div>
     </div>
-    <!--  -->
+    <!-- 购物车多选按钮 -->
+    <div class="allchecked">
+        <label>
+            <input type="text">
+            全选
+        </label>
+        <ul>
+            <li>商品</li>
+            <li>单价</li>
+            <li>数量</li>
+            <li>小计</li>
+            <li>操作</li>
+        </ul>
+    </div>
+    <!-- 购物车内容部分 -->
+    <div id="carContent">
+        <label>
+            <input type="text">
+        </label>
+        <div class="carContent_top">
+            <a href="">
+                <img src="https://res.vmallres.com/pimages//product/6901443356867/428_428_98C86546D993926AA64531BD16224A1CB286A8D663EF4F4Emp.png" alt="">
+            </a>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        荣耀V30 PRO 双模5G 麒麟990 5G SOC芯片 突破性相机矩阵 双超级快充 8GB+128GB 冰岛幻境 李现同款
+                    </a>
+                    <p>冰岛幻境 5G全网通 8GB+128GB 官方标配</p>
+                    <p>
+                        <span>分期免息</span>
+                    </p>
+                </li>
+                <li>
+                    <span>¥ 3899.00</span>
+                </li>
+                <li>
+                    <a href="javascript:;">-</a>
+                    <input type="text" value="1">
+                    <a href="javascript:;">+</a>
+                </li>
+                <li style="color: red;">
+                    ¥ 3899.00
+                </li>
+                <li>
+                    <a href="javascript:;">删除</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <script src="javascript/jquery.js"></script>
-    <script src="javascript/cartlist.js" id="index" type="module"></script>
+    <script src="javascript/index.js" id="index3" type="module"></script>
 </body>
 
 </html>

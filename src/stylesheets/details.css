@@ -422,6 +422,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 450px;
 }
 /* line 37, ../sass/_detailsheader.scss */
+#shop .left .pic a img {
+  width: 460px;
+  height: 450px;
+}
+/* line 43, ../sass/_detailsheader.scss */
 #shop .left #sf {
   width: 50px;
   height: 50px;
@@ -433,11 +438,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   visibility: hidden;
   cursor: move;
 }
-/* line 48, ../sass/_detailsheader.scss */
+/* line 54, ../sass/_detailsheader.scss */
 #shop .left #bf {
   width: 450px;
   height: 450px;
-  border: 1px solid #000;
+  border: 2px solid #ccc;
   float: left;
   overflow: hidden;
   position: absolute;
@@ -446,27 +451,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 3;
   visibility: hidden;
 }
-/* line 59, ../sass/_detailsheader.scss */
+/* line 65, ../sass/_detailsheader.scss */
 #shop .left #bf img {
+  width: 850px;
+  height: 850px;
   position: absolute;
   left: 0px;
   top: 0px;
 }
-/* line 65, ../sass/_detailsheader.scss */
+/* line 73, ../sass/_detailsheader.scss */
 #shop .left .lp {
   width: 450px;
   height: 68px;
   margin-top: 25px;
   position: relative;
 }
-/* line 71, ../sass/_detailsheader.scss */
+/* line 79, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_left {
   position: absolute;
   top: 0;
   width: 30px;
   height: 68px;
 }
-/* line 77, ../sass/_detailsheader.scss */
+/* line 85, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_left::before {
   content: "";
   width: 30px;
@@ -475,7 +482,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 19px;
   background: url(https://res8.vmallres.com/20191126/css/../images/echannel/icon/icon01.svg) -265px -97px no-repeat;
 }
-/* line 85, ../sass/_detailsheader.scss */
+/* line 93, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_right {
   position: absolute;
   top: 0;
@@ -483,7 +490,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 68px;
   right: 0;
 }
-/* line 92, ../sass/_detailsheader.scss */
+/* line 100, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_right::before {
   content: "";
   width: 30px;
@@ -492,54 +499,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 19px;
   background: url(https://res8.vmallres.com/20191126/css/../images/echannel/icon/icon01.svg) -185px -97px no-repeat;
 }
-/* line 100, ../sass/_detailsheader.scss */
+/* line 108, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_pic {
   width: 370px;
   height: 68px;
-  margin-left: 40px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  left: 40px;
 }
-/* line 106, ../sass/_detailsheader.scss */
+/* line 115, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_pic .lp_pic_ul {
-  width: 100%;
+  overflow: hidden;
+  width: 550px;
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 111, ../sass/_detailsheader.scss */
+/* line 121, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_pic .lp_pic_ul li {
   float: left;
   padding: 0 3px;
 }
-/* line 116, ../sass/_detailsheader.scss */
+/* line 124, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_pic .lp_pic_ul li a {
   display: block;
   width: 66px;
   height: 66px;
   border: 1px solid #fff;
 }
-/* line 121, ../sass/_detailsheader.scss */
+/* line 129, ../sass/_detailsheader.scss */
 #shop .left .lp .lp_pic .lp_pic_ul li a img {
   display: block;
   width: 60px;
   height: 60px;
   margin: 3px 0 0 3px;
 }
-/* line 134, ../sass/_detailsheader.scss */
+/* line 142, ../sass/_detailsheader.scss */
 #shop .right {
   width: 730px;
   height: 100%;
   background-color: white;
   float: right;
 }
-/* line 140, ../sass/_detailsheader.scss */
+/* line 148, ../sass/_detailsheader.scss */
 #shop .right .right_title h2 {
   font-size: 21px;
   overflow: hidden;
   margin-bottom: 10px;
 }
-/* line 145, ../sass/_detailsheader.scss */
+/* line 153, ../sass/_detailsheader.scss */
 #shop .right .right_title p {
   font-size: 14px;
   padding-right: 40px;
@@ -561,7 +569,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 15px;
   color: #ca141d;
 }
-/* line 167, ../sass/_detailsheader.scss */
+/* line 175, ../sass/_detailsheader.scss */
 #shop .right .right_content {
   background: #f5f5f5;
   padding-top: 14px;
@@ -570,13 +578,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 175px;
   padding-left: 15px;
 }
-/* line 175, ../sass/_detailsheader.scss */
+/* line 183, ../sass/_detailsheader.scss */
 #shop .right .right_content .content_price label {
   width: 85px;
   text-indent: 10px;
   line-height: 30px;
 }
-/* line 181, ../sass/_detailsheader.scss */
+/* line 189, ../sass/_detailsheader.scss */
 #shop .right .right_content .content_price span {
   font-size: 24px;
   height: 30px;
@@ -586,13 +594,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 3px;
   margin-left: 35px;
 }
-/* line 193, ../sass/_detailsheader.scss */
+/* line 201, ../sass/_detailsheader.scss */
 #shop .right .right_content .content_shop label {
   width: 85px;
   text-indent: 10px;
   line-height: 30px;
 }
-/* line 199, ../sass/_detailsheader.scss */
+/* line 207, ../sass/_detailsheader.scss */
 #shop .right .right_content .content_shop span {
   font-size: 14px;
   height: 30px;
@@ -603,13 +611,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-left: 45px;
   border: 1px solid red;
 }
-/* line 212, ../sass/_detailsheader.scss */
+/* line 220, ../sass/_detailsheader.scss */
 #shop .right .right_xiangqing {
   width: 700px;
   height: 170px;
   border-bottom: 1px solid gray;
 }
-/* line 217, ../sass/_detailsheader.scss */
+/* line 225, ../sass/_detailsheader.scss */
 #shop .right .right_xiangqing .xiangqing_service label {
   float: left;
   width: 85px;
@@ -617,7 +625,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 60px;
   font-size: 16px;
 }
-/* line 224, ../sass/_detailsheader.scss */
+/* line 232, ../sass/_detailsheader.scss */
 #shop .right .right_xiangqing .xiangqing_service span {
   float: left;
   line-height: 60px;
@@ -627,7 +635,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 20px;
   color: gray;
 }
-/* line 233, ../sass/_detailsheader.scss */
+/* line 241, ../sass/_detailsheader.scss */
 #shop .right .right_xiangqing .xiangqing_service p {
   margin-right: 16px;
   width: 614px;
@@ -638,7 +646,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
   color: gray;
 }
-/* line 245, ../sass/_detailsheader.scss */
+/* line 253, ../sass/_detailsheader.scss */
 #shop .right .right_xiangqing .xiangqing_shop label {
   float: left;
   width: 85px;
@@ -646,7 +654,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 60px;
   font-size: 16px;
 }
-/* line 252, ../sass/_detailsheader.scss */
+/* line 260, ../sass/_detailsheader.scss */
 #shop .right .right_xiangqing .xiangqing_shop span {
   float: left;
   line-height: 60px;
@@ -656,14 +664,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   left: 20px;
   color: gray;
 }
-/* line 263, ../sass/_detailsheader.scss */
+/* line 271, ../sass/_detailsheader.scss */
 #shop .right .right_addshop {
   width: 730px;
   height: 46px;
   position: relative;
   top: 20px;
 }
-/* line 269, ../sass/_detailsheader.scss */
+/* line 277, ../sass/_detailsheader.scss */
 #shop .right .right_addshop .addshop_add {
   float: left;
   border: 1px solid #d6d6d6;
@@ -671,7 +679,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 10px;
   border-radius: 2px;
 }
-/* line 275, ../sass/_detailsheader.scss */
+/* line 283, ../sass/_detailsheader.scss */
 #shop .right .right_addshop .addshop_add input {
   float: left;
   width: 41px;
@@ -682,12 +690,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   border-right: 1px solid #e2e2e2;
 }
-/* line 285, ../sass/_detailsheader.scss */
+/* line 293, ../sass/_detailsheader.scss */
 #shop .right .right_addshop .addshop_add p {
   width: 21px;
   float: left;
 }
-/* line 288, ../sass/_detailsheader.scss */
+/* line 296, ../sass/_detailsheader.scss */
 #shop .right .right_addshop .addshop_add p a {
   display: block;
   font-size: 16px;
@@ -699,11 +707,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   border-bottom: 1px solid #e2e2e2;
 }
-/* line 301, ../sass/_detailsheader.scss */
+/* line 309, ../sass/_detailsheader.scss */
 #shop .right .right_addshop .addshop_xiadan {
   margin-left: 100px;
 }
-/* line 303, ../sass/_detailsheader.scss */
+/* line 311, ../sass/_detailsheader.scss */
+#shop .right .right_addshop .addshop_xiadan a:hover {
+  background-color: #ca151d;
+}
+/* line 314, ../sass/_detailsheader.scss */
 #shop .right .right_addshop .addshop_xiadan a {
   background-position-y: 8px;
   float: left;

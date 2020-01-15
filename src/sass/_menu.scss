@@ -10,13 +10,23 @@
                 li:first-child {
                     margin: 0 1px 0 0;
                 }
+                li:hover {
+                    // transition: all .2s linear 0s;
+                    // width: 232px;
+                    // background: #FFF;
+                    // margin-bottom: 10px;
+                    // margin-left: 10px;
+                    // z-index: 1;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, .6);
+                    transform: translate3d(0, -2px, 0);
+                    transition: 1s;
+                }
                 li {
                     float: left;
                     margin-left: 13px;
                     width: 290px;
                     height: 200px;
                     border-radius: 20px;
-                    transition: all .2s linear 0s;
                     a {
                         display: block;
                         height: 200px;
@@ -66,6 +76,12 @@
                             margin-bottom: 12px;
                             margin-top: 0;
                             float: left;
+                        }
+                        li:hover {
+                            background: #FFF;
+                            box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+                            transform: translate3d(0px, -0.5px, 0px);
+                            transition: all .1s linear 0s;
                         }
                     }
                 }
@@ -134,10 +150,13 @@
                 .footer_content_ul {
                     width: 1200px;
                     height: 295px;
-                    transform: translate3d(0px, 0px, 0px);
-                    transition-duration: 0.3s;
                     min-width: 1200px;
                     overflow: hidden;
+                    li:hover {
+                        box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+                        transform: translate3d(0px, 0px, 0px);
+                        transition: all .3s linear 0s;
+                    }
                     li {
                         width: 240px;
                         height: 295px;

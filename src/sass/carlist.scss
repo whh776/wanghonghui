@@ -10,8 +10,14 @@ a {
     cursor: pointer;
 }
 
+body {
+    background: #f5f5f5;
+}
+
 @import "compass/reset";
 // 头部
 @import "header";
 // 搜索框
 @import "ssk";
+// 内容
+@import "cartlistContent";

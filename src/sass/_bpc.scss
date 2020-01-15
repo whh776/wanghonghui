@@ -12,6 +12,7 @@ $bpc_height:550px;
             width: 100%;
             height: 100%;
             margin: 0 auto;
+            overflow: hidden;
             // 背景大图片
             li {
                 background: no-repeat;
@@ -81,6 +82,7 @@ $bpc_height:550px;
         }
         // 按钮
         .bpc_button {
+            margin: 0 auto;
             .active {
                 background: orange;
             }

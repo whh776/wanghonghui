@@ -1,113 +1,107 @@
-! function($) {
-    class Fdj {
-        constructor() {
-            this.shop = $('.shop');
-            this.spic = $('.pic');
-            this.sf = $('#sf');
-            this.bf = $('#bf');
-            // this.bpic = $('#bpic');
-            // this.left = $('#left');
-            // this.right = $('#right');
-            // this.ulmove = $('#list ul');
-            // this.list = $('#list ul li');
-        }
-        init() {
-            //1.鼠标移入移出显示隐藏小放和大放。
-            let _this = this; //_this指的是实例对象
-            this.spic.hover(() => {
-                $('#sf,#bf').css('visibility', 'visible');
+// ! function($) {
 
+class detailsPage {
+    constructor() {
+        this.shop = $('#shop');
+        this.spic = $('.pic');
+        this.sf = $('#sf');
+        this.bf = $('#bf');
+        this.bpic = $('#bf img');
+        this.left = $('.lp_left');
+        this.right = $('.lp_right');
+        this.ul = $('.lp_pic_ul ');
+        this.li = $('.lp_pic_ul li');
+        // console.log(document.querySelector('.lp_pic_ul'));
+        // console.log(document.querySelector('.lp_pic_ul li'));
+        // console.log(document.querySelector('.lp_right'));
+        // console.log(document.querySelector('.lp_left'));
 
-                //3.求小放的尺寸和比例  
-                // this.sf.css({
-                //     width: this.spic.outerWidth() * this.bf.outerWidth() / this.bpic.outerWidth(),
-                //     height: this.spic.outerHeight() * this.bf.outerHeight() / this.bpic.outerHeight()
-                //         // width: "1000px",
-                //         // height: "1000px"
-                // });
-                //求比例
-                // this.bili = this.bpic.outerWidth() / this.spic.outerWidth();
-
-
-
-                //2.鼠标在小图中移动，小放跟随鼠标
-                this.spic.on('mousemove', (e) => {
-                    let $l = e.pageX - this.shop.offset().left - this.sf.width() / 2;
-                    let $t = e.pageY - this.shop.offset().top - this.sf.height() / 2;
-                    if ($l < 0) {
-                        $l = 0;
-                    } else if ($l >= this.spic.outerWidth() - this.sf.outerWidth()) {
-                        $l = this.spic.outerWidth() - this.sf.outerWidth() - 2;
-                    }
-
-                    if ($t < 0) {
-                        $t = 0;
-                    } else if ($t >= this.spic.outerHeight() - this.sf.outerHeight()) {
-                        $t = this.spic.outerHeight() - this.sf.outerHeight() - 2;
-                    }
-
-                    this.sf.css({
-                        left: $l,
-                        top: $t
-                    });
-
-                    //大图进行赋值
-                    // this.bpic.css({
-                    //     left: -$l * this.bili,
-                    //     top: -$t * this.bili
-                    // });
-                });
-            }, () => {
-                $('#sf,#bf').css('visibility', 'hidden');
-            });
-
-
-            //4.点击对应的li切换缩放的图片
-            //#list ul li:委托的元素
-            //$(this):委托的元素。 
-            // this.ulmove.on('click', 'li', function() { //li是事件委托的元素
-            //     let $imgurl = $(this).find('img').attr('src');
-            //     _this.spic.find('img').attr('src', $imgurl);
-            //     _this.bpic.attr('src', $imgurl);
-            // });
-
-
-            // //5.点击左右箭头，进行图片运动
-            // let $num = 6; //可视的li的长度。
-            // let $liwidth = this.list.eq(0).outerWidth(true); //1个li的宽度
-            // if (this.list.size() <= $num) {
-            //     this.right.css('color', '#fff');
-            // }
-
-
-            // this.right.on('click', () => {
-            //     if (this.list.length > $num) {
-            //         $num++;
-            //         this.left.css('color', '#333');
-            //         if ($num === this.list.length) {
-            //             this.right.css('color', '#fff');
-            //         }
-            //         this.ulmove.animate({
-            //             left: -($num - 6) * $liwidth
-            //         });
-            //     }
-
-            // });
-
-            // this.left.on('click', () => {
-            //     if ($num > 6) {
-            //         $num--;
-            //         this.right.css('color', '#333');
-            //         if ($num === 6) {
-            //             this.left.css('color', '#fff');
-            //         }
-            //         this.ulmove.animate({
-            //             left: -($num - 6) * $liwidth //右边不是正的吗
-            //         });
-            //     }
-            // });
-        }
     }
+    init() {
+        let _this = this;
+        // 放大镜
+        this.spic.hover(() => {
+            $('#sf,#bf').css('visibility', 'visible');
+            this.sf.css({
+                width: this.spic.outerWidth() * this.bf.outerWidth() / this.bpic.outerWidth(),
+                height: this.spic.outerHeight() * this.bf.outerHeight() / this.bpic.outerHeight()
+            });
+            this.bili = this.bpic.outerWidth() / this.spic.outerWidth();
+            this.spic.on('mousemove', (e) => {
+                let $l = e.pageX - this.shop.offset().left - this.sf.width() / 2;
+                let $t = e.pageY - this.shop.offset().top - this.sf.height() / 2;
+                if ($l < 0) {
+                    $l = 0;
+                } else if ($l >= this.spic.outerWidth() - this.sf.outerWidth()) {
+                    $l = this.spic.outerWidth() - this.sf.outerWidth() - 2;
+                }
+                if ($t < 0) {
+                    $t = 0;
+                } else if ($t >= this.spic.outerHeight() - this.sf.outerHeight()) {
+                    $t = this.spic.outerHeight() - this.sf.outerHeight() - 2;
+                }
+                this.sf.css({
+                    left: $l,
+                    top: $t
+                });
+                this.bpic.css({
+                    left: -$l * this.bili,
+                    top: -$t * this.bili
+                });
+            });
+        }, () => {
+            $('#sf,#bf').css('visibility', 'hidden');
+        });
+        // 交换图片
+        this.ul.on('click', 'li', function() {
+            let $imgurl = $(this).find('img').attr('src');
+            _this.spic.find('img').attr('src', $imgurl).css({
+                width: "450px",
+                height: "450px"
+            });
+            _this.bpic.attr('src', $imgurl);
+        });
+        let $num = 5;
+        let $liwidth = this.li.eq(0).outerWidth(true);
+        if (this.li.size() <= $num) {
+            this.right.show();
+        }
+        // 左右点击轮播
+        let $liLength = this.ul.find('li').length
 
-    new Fdj().init();
-}(jQuery);
+        this.right.on('click', () => {
+            console.log(1);
+
+            if (this.ul.li.length >= $num) {
+                // console.log(this.li.length);
+                console.log(2);
+
+                $num++;
+                this.left.show();
+                if ($num === this.li.length) {
+                    this.right.hide();
+                }
+                this.ul.animate({
+                    left: -($num - 5) * $liwidth
+                });
+            }
+
+        });
+        // 左边
+        this.left.on('click', () => {
+            if ($num > 5) {
+                $num--;
+                this.right.show();
+                if ($num === 5) {
+                    this.left.hide();
+                }
+                this.ul.animate({
+                    left: -($num - 5) * $liwidth
+                });
+            }
+        });
+    }
+}
+export {
+    detailsPage
+}

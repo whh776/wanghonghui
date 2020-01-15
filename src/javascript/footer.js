@@ -37,8 +37,8 @@ class footer {
             $('html').animate({ scrollTop: 0 }, 500);
             return false
         });
-
-
     }
 }
-new footer().init()
+export {
+    footer
+}

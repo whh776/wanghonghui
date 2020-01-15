@@ -22,8 +22,7 @@ class ssk {
     }
 }
 
-new ssk().init();
 // }(jQuery)
-// export {
-//     ssk
-// }
+export {
+    ssk
+}

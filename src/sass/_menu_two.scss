@@ -65,6 +65,11 @@ $menu_two_height:8206px;
                         width: 100%;
                     }
                 }
+                li:hover {
+                    box-shadow: 0 10px 10px rgba(0, 0, 0, .6);
+                    transform: translate3d(0px, -0.5px, 0px);
+                    transition: all .1s linear 0s;
+                }
                 li {
                     height: 290px;
                     width: 230px;
