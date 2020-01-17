@@ -11,6 +11,8 @@ import { footer } from './footer.js'
 import { detailsPage } from './detailsPage.js';
 import { detailsRender } from './detailsRender.js';
 import { cartlist } from './cartlist.js';
+import { registry } from './registry.js';
+import { login } from './login.js';
 
 if (ele == 'index') {
     new header().init();
@@ -31,4 +33,10 @@ if (ele == 'index2') {
 }
 if (ele == 'index3') {
     new cartlist().init();
+}
+if (ele == 'index4') {
+    new registry().init();
+}
+if (ele == 'index5') {
+    new login().init();
 }

@@ -7,7 +7,7 @@ class menuTwoPhone {
     }
     init() {
         $.ajax({
-            url: "http://localhost/wanghonghui/php/menuTwoPhone.php",
+            url: "http://10.31.152.68/wanghonghui/php/menuTwoPhone.php",
             dataType: 'json'
         }).done(date => {
             let $menuTwoContent = '<ul class= "menu_two_content_ul">'

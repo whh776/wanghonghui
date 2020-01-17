@@ -6,12 +6,5 @@ if(isset($_GET['sid'])){
     echo json_encode($result->fetch_assoc());
 }else{
     exit('非法操作');
-}
-// include "conn.php";
-// $result=$conn->query("SELECT*FROM detailsRender");
-// $array=array();
-// for($i=0;$i<$result->num_rows;$i++){
-//     $array[$i]=$result->fetch_assoc();
-// }
-// echo json_encode($array); 
+} 
 ?>

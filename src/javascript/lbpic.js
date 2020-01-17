@@ -6,7 +6,7 @@ class lbpic {
     }
     init() {
         $.ajax({
-            url: "http://localhost/wanghonghui/php/lbpic.php",
+            url: "http://10.31.152.68/wanghonghui/php/lbpic.php",
             dataType: 'json'
         }).done(date => {
             let $lbPicStr = '<ul class= "lbPic_ul">'

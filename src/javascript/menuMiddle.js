@@ -6,7 +6,7 @@ class menuMiddle {
     }
     init() {
         $.ajax({
-            url: "http://localhost/wanghonghui/php/menu.php",
+            url: "http://10.31.152.68/wanghonghui/php/menu.php",
             dataType: 'json'
         }).done(date => {
             let $middleLeft = ''

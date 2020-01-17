@@ -69,7 +69,7 @@
     <!-- 购物车多选按钮 -->
     <div class="allchecked">
         <label>
-            <input type="text">
+            <input type="checkbox">
             全选
         </label>
         <ul>
@@ -82,38 +82,70 @@
     </div>
     <!-- 购物车内容部分 -->
     <div id="carContent">
-        <label>
-            <input type="text">
-        </label>
-        <div class="carContent_top">
-            <a href="">
-                <img src="https://res.vmallres.com/pimages//product/6901443356867/428_428_98C86546D993926AA64531BD16224A1CB286A8D663EF4F4Emp.png" alt="">
+
+        <!-- 商品渲染 -->
+        <div class="carContent_top" style="display: none;">
+            <label>
+                <input type="checkbox">
+            </label>
+            <a href="" class="img">
+                <img src="" alt="">
             </a>
             <ul>
-                <li>
+                <li class="title">
                     <a href="javascript:;">
-                        荣耀V30 PRO 双模5G 麒麟990 5G SOC芯片 突破性相机矩阵 双超级快充 8GB+128GB 冰岛幻境 李现同款
+
                     </a>
-                    <p>冰岛幻境 5G全网通 8GB+128GB 官方标配</p>
+                    <p class="span">冰岛幻境 5G全网通 8GB+128GB 官方标配</p>
                     <p>
                         <span>分期免息</span>
                     </p>
                 </li>
-                <li>
-                    <span>¥ 3899.00</span>
+                <li class="price">
+                    <span></span>
                 </li>
-                <li>
-                    <a href="javascript:;">-</a>
-                    <input type="text" value="1">
-                    <a href="javascript:;">+</a>
+                <li class="num">
+                    <input value="" type="text">
+                    <p>
+                        <a href="javascript:;">-</a>
+                        <a href="javascript:;">+</a>
+                    </p>
                 </li>
-                <li style="color: red;">
-                    ¥ 3899.00
+                <li style="color: red;" class="allnum">
                 </li>
                 <li>
                     <a href="javascript:;">删除</a>
                 </li>
             </ul>
+        </div>
+
+
+    </div>
+    <!--  -->
+    <div class="list-pro">
+
+        <div class="totla_tool">
+            <div class="total_control l">
+                <span class="checkbox">
+                    <input type="checkbox"> 全选
+                </span>
+                <a href="javascript:;">删除</a>
+            </div>
+            <div class="total_btn r">
+                <a href="javascript:;">立即结算</a>
+            </div>
+            <div class="total_price r">
+                <p>
+                    <span>总计：</span>
+                    <span class="price">¥  1599.00</span>
+                    <em></em>
+                </p>
+                <div class="total_choose">
+                    已选择
+                    <em>1</em>件商品，优惠：
+                    <span>¥ 0.00</span>
+                </div>
+            </div>
         </div>
     </div>
     <script src="javascript/jquery.js"></script>

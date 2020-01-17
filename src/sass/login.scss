@@ -1,0 +1,12 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+}
+
+@import "compass/reset"; //重置浏览器的默认样式
+// 头部
+@import "loginContent";

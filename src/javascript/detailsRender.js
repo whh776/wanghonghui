@@ -10,12 +10,13 @@ class detailsRender {
 
     init() {
             $.ajax({
-                url: 'http://localhost/wanghonghui/php/detailsRender.php',
+                url: 'http://10.31.152.68/wanghonghui/php/detailsRender.php',
                 data: {
                     sid: this.sid
                 },
                 dataType: 'json'
             }).done((objdata) => {
+
                 $('#shop .left .pic a').find('img').attr('src', objdata.url);
                 $('#shop .left #bf img').attr('src', objdata.url);
                 $('.right .right_title h2').html(objdata.title)
