@@ -11,8 +11,6 @@ if(isset($_POST['phone'])){
         echo false;//空隙
     }
 }
-
-
 if(isset($_POST['submit'])){
     $phone=$_POST['phone'];
     $password=sha1($_POST['password']);//后端加密

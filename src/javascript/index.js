@@ -1,4 +1,14 @@
-const ele = document.querySelectorAll('script')[1].id
+// 引入页面的css
+import 'jquery';
+// 
+import '../stylesheets/index.css';
+import '../stylesheets/details.css';
+import '../stylesheets/carlist.css';
+import '../stylesheets/registry.css';
+import '../stylesheets/login.css';
+// 引入页面的js
+// 
+const ele = document.querySelector('script').id
 import { header } from './header.js';
 import { ssk } from './ssk.js';
 import { bpc } from './bpc.js';
@@ -6,13 +16,14 @@ import { lbpic } from './lbpic.js';
 import { menuTop } from './menuTop.js';
 import { menuMiddle } from './menuMiddle.js';
 import { menuFooter } from './menuFooter.js';
-import { menuTwoPhone } from './menuTwoPhone.js'
-import { footer } from './footer.js'
+import { menuTwoPhone } from './menuTwoPhone.js';
+import { footer } from './footer.js';
 import { detailsPage } from './detailsPage.js';
 import { detailsRender } from './detailsRender.js';
 import { cartlist } from './cartlist.js';
 import { registry } from './registry.js';
 import { login } from './login.js';
+
 
 if (ele == 'index') {
     new header().init();

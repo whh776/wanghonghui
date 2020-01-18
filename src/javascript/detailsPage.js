@@ -11,10 +11,6 @@ class detailsPage {
         this.right = $('.lp_right');
         this.ul = $('.lp_pic_ul ');
         this.li = $('.lp_pic_ul li');
-        // console.log(document.querySelector('.lp_pic_ul'));
-        // console.log(document.querySelector('.lp_pic_ul li'));
-        // console.log(document.querySelector('.lp_right'));
-        // console.log(document.querySelector('.lp_left'));
 
     }
     init() {

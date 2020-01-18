@@ -4,8 +4,6 @@ class registry {
         this.userflag = true;
         this.passlock = true;
         this.twopasslock = true;
-
-
     }
     init() {
         // let _this = this;
@@ -29,7 +27,8 @@ class registry {
 
         // 点击按钮提交注册
         $('form').on('submit', () => {
-            submit()
+
+            onsubmit()
         })
     }
 
@@ -75,8 +74,8 @@ class registry {
             switch (count) {
                 case 1:
                     $('.span12').html('弱')
-                    $('.span12').css('color', 'red') =
-                        this.passlock = false;
+                    $('.span12').css('color', 'red')
+                    this.passlock = false;
                     break;
                 case 2:
                 case 3:
@@ -126,7 +125,9 @@ class registry {
     }
 
     // 点击按钮提交注册
-    submit() {
+    onsubmit() {
+        console.log(1);
+
         if (this.user.val() == '') {
             $('.span11').html('请输入手机号').css("color", "red");
             this.userflag = false;
@@ -139,8 +140,13 @@ class registry {
             $('.span13').html('请再次输入密码').css("color", "red");
             this.twopasslock = false;
         };
+        // console.log(this.userflag);
+        // console.log(this.passlock);
+        // console.log(this.twopasslock);
+
         if (!this.userflag || !this.passlock || !this.twopasslock) {
             return false;
+
         }
     }
 
