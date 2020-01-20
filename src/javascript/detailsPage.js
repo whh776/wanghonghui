@@ -64,12 +64,16 @@ class detailsPage {
         }
         // 左右点击轮播
         let $liLength = this.ul.find('li').length
+            // console.log(this.right);
+        console.log($liLength);
 
         this.right.on('click', () => {
+            console.log(this.right);
             console.log(1);
+            let $num = 5;
 
-            if (this.ul.li.length >= $num) {
-                // console.log(this.li.length);
+            console.log(this.li.length);
+            if (this.li.length >= $num) {
                 console.log(2);
 
                 $num++;
