@@ -10,7 +10,7 @@ class detailsRender {
 
     init() {
             $.ajax({
-                url: 'http://10.31.152.68/wanghonghui/php/detailsRender.php',
+                url: 'http://localhost/wanghonghui/php/detailsRender.php',
                 data: {
                     sid: this.sid
                 },

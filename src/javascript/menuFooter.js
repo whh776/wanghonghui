@@ -6,7 +6,7 @@ class menuFooter {
     }
     init() {
         $.ajax({
-            url: "http://10.31.152.68/wanghonghui/php/menuFooter.php",
+            url: "http://localhost/wanghonghui/php/menuFooter.php",
             dataType: 'json'
         }).done(date => {
             let $footerContent = '<ul class= "footer_content_ul">'

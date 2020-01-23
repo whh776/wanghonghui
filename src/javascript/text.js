@@ -7,7 +7,7 @@ class render {
     }
     init() {
         $.ajax({
-            url: "http://10.31.152.68/wanghonghui/php/menu.php",
+            url: "http://localhost/wanghonghui/php/menu.php",
             dataType: 'json'
         }).done(date => {
             // console.log(date);

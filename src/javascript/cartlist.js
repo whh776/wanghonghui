@@ -34,7 +34,7 @@ class cartlist {
     }
     render(sid, num) {
         $.ajax({
-            url: 'http://10.31.152.68/wanghonghui/php/cartlist.php',
+            url: 'http://localhost/wanghonghui/php/cartlist.php',
             dataType: 'json',
         }).done(date => {
             $.each(date, (index, value) => {

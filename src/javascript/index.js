@@ -1,5 +1,6 @@
-// 引入页面的css
 import 'jquery';
+import 'sha1';
+// 引入页面的css
 // 
 import '../stylesheets/index.css';
 import '../stylesheets/details.css';
@@ -23,6 +24,7 @@ import { detailsRender } from './detailsRender.js';
 import { cartlist } from './cartlist.js';
 import { registry } from './registry.js';
 import { login } from './login.js';
+// import { login } from './sha1.js';
 
 
 if (ele == 'index') {

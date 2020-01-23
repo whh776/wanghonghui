@@ -1,15 +1,16 @@
+// import './sha1.js';
 class login {
     constructor() {
-        // this.name=$('.username')
+        // this.name = $('.username')
     }
     init() {
-        $('.login').on('click', function() {
+        $('.button').on('click', function() {
             $.ajax({
                 type: 'post',
-                url: 'http://10.31.152.68/wanghonghui/php/login.php',
+                url: 'http://localhost/wanghonghui/php/login.php',
                 data: {
                     user: $('.username').val(),
-                    pass: hex_sha1($('.password').val())
+                    pass: $('.password').val()
                 }
             }).done(function(result) {
                 if (result) { //匹配成功
